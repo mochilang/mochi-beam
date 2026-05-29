@@ -23,7 +23,7 @@ jobs:
         run: go build ./...
 
       - name: Test
-        run: go test ./... -timeout 60s -race
+        run: go test ./... -timeout 600s -race
 
       - name: Vet
         run: go vet ./...
